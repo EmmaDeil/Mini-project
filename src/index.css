@@ -1,10 +1,14 @@
-#navbarNav{
-  display: inline-flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  gap: 2rem !important;
+#navfluid {
+  background-color: lightblue;
+  padding: 1rem;
 }
 
-.navlist {
-  background-color: lightblue;
+.navbar-brand img {
+  margin-right: 0.5rem;
+  border-radius: 10rem;
 }
+
+.navbar-nav {
+   gap: 2rem;
+}
+

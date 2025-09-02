@@ -1,0 +1,29 @@
+/* Mobile (portrait & small screens) */
+@media (max-width: 600px) {
+  /* Your mobile styles here */
+  #navbarNav {
+    flex-direction: column !important;
+  }
+}
+
+/* Tablet (landscape & medium screens) */
+@media (min-width: 601px) and (max-width: 991px) {
+  /* Your tablet styles here */
+  #navbarNav {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 2rem !important;
+  }
+}
+
+/* Desktop (large screens) */
+@media (min-width: 992px) {
+  /* Your desktop styles here */
+  #navbarNav {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 2rem !important;
+  }
+}

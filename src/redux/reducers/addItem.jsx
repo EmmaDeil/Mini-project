@@ -8,7 +8,7 @@ const addItems = (state = addItem, action) => {
     ]
     break;
 
-    case 'DELITEM' : return state = state.filter((x) =>{
+    case 'DELITEM' : return state = state.filter((x) => {
       return x.id !== action.payload.id
     })
     break;

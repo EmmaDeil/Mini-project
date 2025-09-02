@@ -1,3 +1,10 @@
+#navbarNav{
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 2rem !important;
+}
+
 .navlist {
-  
+  background-color: lightblue;
 }

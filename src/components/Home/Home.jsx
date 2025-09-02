@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../../public/A30.jpg";
-import img2 from "../../../public/A50.jpg";
-import img3 from "../../../public/A90.jpg";
-import img4 from "../../../public/S20.jpg";
+import img1 from "/A30.jpg";
+import img2 from "/A50.jpg";
+import img3 from "/A90.jpg";
+import img4 from "/S20.jpg";
 
 const Home = () => {
   return (

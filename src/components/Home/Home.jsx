@@ -3,6 +3,7 @@ import img1 from "/A30.jpg";
 import img2 from "/A50.jpg";
 import img3 from "/A90.jpg";
 import img4 from "/S20.jpg";
+import Deals from "../Deals";
 
 const Home = () => {
   return (
@@ -69,6 +70,10 @@ const Home = () => {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <div className="container text-center my-4">
+
+      </div>
+      <Deals />
     </div>
   );
 };

@@ -9,6 +9,61 @@
 }
 
 .navbar-nav {
-   gap: 2rem;
+  gap: 2rem;
 }
 
+#live-chat-button {
+  margin: 0.5rem 2.5rem;
+  width: 7em;
+  padding: 0.2rem;
+  font-size: small;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Footer stylings */
+
+#subscribe {
+   justify-content: center;
+  background-color: lightblue;
+  padding: 9rem 0;
+  text-align: center;
+}
+
+.subword {
+   font-size: 2.7rem;
+   margin-bottom: 1rem;
+}
+.subwork {
+   font: 1em sans-serif;
+}
+
+.scribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  gap: 0.4rem;
+  font-size: 1rem;
+  padding: 0.6rem 0;
+}
+
+.subinput {
+  padding: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  width: 20rem;
+  padding: 0.5rem 1rem;
+}
+
+.subinput:focus {
+  outline: none;
+  border-color: blue;
+}
+
+.subbtn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

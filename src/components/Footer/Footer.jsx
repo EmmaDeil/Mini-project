@@ -105,7 +105,8 @@ const Footer = () => {
         </div>
         <div className="row">
           <div className="col">
-
+          <img src="/logo.png" alt="logo" width="150" height="150" className="d-inline-block align-text-top"/>
+          <p>This is a true market place where buyer get true value for their money.</p>
           </div>
           <div className="col">
             

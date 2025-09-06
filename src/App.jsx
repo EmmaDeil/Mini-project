@@ -10,27 +10,34 @@ import Product from './components/Product/Products'
 import Cart from './components/Cart/Cart'
 import ProductDetails from './components/Product/ProductsDetails'
 import NotFound from './components/NotFound'
-// import PageTitle from './components/PageTitle'
+import PageTitle from './components/PageTitle'
 
 function App() {
   
   return (
     <>
-      <Navbar />
     <Routes>
-     
-      <Route path="/" element={<Home />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/checkout" element={<Checkout />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/product" element={<Product />} />
-      <Route path="/product/:id" element={<ProductDetails />} />
-      <Route path="*" element={<NotFound />} />
+
+      <Route path='*/*' element={
+        <>
+        <PageTitle defaultTitle="Blue_Bird" />
+        <Navbar />
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+        </>
+      } />
     </Routes>
-      <Footer />
     </>
-  )
+  );
 }
 
 export default App

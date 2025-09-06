@@ -1,9 +1,18 @@
-import React from 'react';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-const PageTitle = ({ title }) => (
-   <h1 style={{ fontSize: '2rem', fontWeight: 'bold', margin: '1rem 0' }}>
-      {title}
-   </h1>
-);
+function PageTitle({ defaultTitle = "My Website" }) {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Remove leading "/" and capitalize first letter
+    let page = location.pathname.substring(1) || "home";
+    page = page.charAt(0).toUpperCase() + page.slice(1);
+
+    document.title = `${page} | ${defaultTitle}`;
+  }, [location, defaultTitle]);
+
+  return null; // Component doesn’t render anything
+}
 
 export default PageTitle;
